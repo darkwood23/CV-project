@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#all-elements > h1 {
+    text-align: center;
+}
+
+.general-information {
+    display: grid;
+    grid-template-columns: 60% 14%;
+    align-items: center;
+    justify-content: center;
+}
+
+.general-information input {
+    width: 18rem;
+    height: 3rem;
+    font-size: 2rem;
+    padding: 0.15rem;
+}
+
+.general-information label {
+    font-size: 2rem;
+}
+
+.temp-div {
+    display: flex;
+    flex-direction: column;
+}
