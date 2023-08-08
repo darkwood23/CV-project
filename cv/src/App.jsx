@@ -1,12 +1,19 @@
 import './styles/App.css'
 import General from './components/general-info'
+import streetPhoto from './assets/street-photo.jpg'
 
 function App() {
 
   return (
     <div id='all-elements'>
-      <h1>CV-Project</h1>
-      <General />
+      <div className='photo'>
+                <img src={streetPhoto} className='street-photo'/>
+                <p className='text-on-image'>Photo by <a href='https://unsplash.com/@leronep'>Lerone Pieters</a> on <a href='https://unsplash.com'>Unsplash</a></p>
+      </div>
+      <div id='all-forms'>
+        <h1>C.V.</h1>
+        <General />
+      </div>
     </div>
   )
 }

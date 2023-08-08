@@ -4,15 +4,13 @@
     box-sizing: border-box;
 }
 
-#all-elements > h1 {
+#all-forms > h1 {
     text-align: center;
 }
 
-.general-information {
-    display: grid;
-    grid-template-columns: 60% 14%;
-    align-items: center;
-    justify-content: center;
+#all-elements {
+    display: flex;
+    gap: 1rem;
 }
 
 .general-information input {
@@ -26,7 +24,58 @@
     font-size: 2rem;
 }
 
+.general-information {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .temp-div {
     display: flex;
     flex-direction: column;
+}
+
+.select-menu-gender {
+    width: 15rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.street-photo {
+    width: 50rem;
+}
+
+.general-section {
+    display: flex;
+}
+
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    gap: 12rem;
+}
+
+#all-forms > h1 {
+    font-size: 3rem;
+}
+
+.photo > p {
+    position: absolute;
+    bottom: -220px;
+    left: 250px;
+    color: white;
+    text-shadow: 2rem;
+}
+
+.photo > p > a {
+    color: white;
+}
+
+.photo > p > a:visited {
+    text-decoration: none;
+}
+
+.photo > p > a:hover {
+    color: rgb(234, 125, 71);
 }
