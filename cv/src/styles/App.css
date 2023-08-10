@@ -8,23 +8,30 @@
     text-align: center;
 }
 
+#all-forms {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 #all-elements {
     display: flex;
     gap: 1rem;
 }
 
-.general-information input {
-    width: 18rem;
-    height: 3rem;
-    font-size: 2rem;
-    padding: 0.15rem;
+input {
+    font-size: 1.5rem;
 }
 
-.general-information label {
+.general-information label,
+#education label,
+#practical label {
     font-size: 2rem;
 }
 
-.general-information {
+.general-information,
+#education,
+#practical {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -35,7 +42,8 @@
     flex-direction: column;
 }
 
-.select-menu-gender {
+.select-menu-gender,
+.select-menu-plan {
     width: 15rem;
     font-size: 2rem;
     text-align: center;
@@ -43,6 +51,7 @@
 
 .street-photo {
     width: 50rem;
+    height: 82rem;
 }
 
 .general-section {
@@ -62,7 +71,7 @@
 
 .photo > p {
     position: absolute;
-    bottom: -220px;
+    bottom: -350px;
     left: 250px;
     color: white;
     text-shadow: 2rem;
@@ -78,4 +87,12 @@
 
 .photo > p > a:hover {
     color: rgb(234, 125, 71);
+}
+
+.general-information,
+#education,
+#practical {
+    background-color: rgb(241, 185, 116);
+    padding: 2rem;
+    border-radius: 2rem;
 }

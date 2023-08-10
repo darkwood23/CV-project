@@ -2,8 +2,9 @@ function General() {
     let genders = ["Male", "Female"]
     return (
         <div className="general-information">
+            <h2>General Information</h2>
             <div className='row1'>
-                <div className="temp-div">
+                <div className="temp-div">  
                     <LabelType for="name" class="general-info info" text="Name*" />
                     <InputType type="text" id="name-text" class="general-input input" />
                 </div>
@@ -22,7 +23,7 @@ function General() {
 
                 <div className="temp-div">
                     <LabelType for="dob" class="general-info info" text="DOB*" />
-                    <InputType type="date" id="dob-text" class="general-input input" />
+                    <InputType type="date" id="dob-date" class="general-input input" />
                 </div>
             </div>
 
@@ -70,3 +71,4 @@ function SelectOpt(props) {
 }
 
 export default General
+export {LabelType, InputType, SelectOpt}
