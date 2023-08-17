@@ -54,7 +54,7 @@ function LabelType(props) {
 function InputType(props) {
     return (
         <>
-            <input type={props.type} id={props.id} className={props.class} value={props.value} name={props.name} onChange={props.change}/>
+            <input type={props.type} id={props.id} className={props.class} value={props.value} name={props.name} onChange={props.change} required/>
         </>
     )
 }

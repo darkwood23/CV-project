@@ -88,7 +88,6 @@ function App() {
             <th>Position</th>
             <th>Worked from</th>
             <th>Worked to</th>
-            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -108,7 +107,6 @@ function App() {
               <td>{data.position}</td>
               <td>{data.from}</td>
               <td>{data.to}</td>
-              <td><button id="edit-btn">Edit</button></td>
             </tr>
           ))}
         </tbody>
